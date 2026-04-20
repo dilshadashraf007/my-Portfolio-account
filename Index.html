@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MD Dilshad Ashraf | DevOps Portfolio</title>
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <title>Md Dilshad Ashraf | DevOps Portfolio</title>
+
+    <!-- FIXED: Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         :root {
             --primary: #38bdf8;
@@ -12,7 +15,6 @@
             --bg-card: #1e293b;
             --text-main: #e2e8f0;
             --text-dim: #94a3b8;
-            --accent: #0ea5e9;
         }
 
         * {
@@ -22,250 +24,138 @@
 
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
             background: var(--bg-dark);
             color: var(--text-main);
-            line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
             padding: 80px 20px;
             text-align: center;
-            border-bottom: 1px solid rgba(56, 189, 248, 0.1);
+            background: linear-gradient(135deg, #1e293b, #0f172a);
         }
 
-        .header-content h1 {
-            margin: 0;
+        h1 {
             font-size: 3rem;
             color: var(--primary);
-            letter-spacing: -1px;
+            margin: 0;
         }
 
-        .header-content p.title {
-            font-size: 1.2rem;
+        .title {
             color: var(--text-dim);
-            margin: 10px 0;
+            margin-top: 10px;
+            font-size: 1.2rem;
         }
 
-        .social-links {
-            margin-top: 20px;
+        .badge {
+            margin-top: 10px;
+            color: #0ea5e9;
+            font-weight: bold;
         }
 
         .social-links a {
-            color: var(--text-main);
+            margin: 10px;
             font-size: 1.5rem;
-            margin: 0 15px;
-            transition: color 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: var(--primary);
+            color: white;
         }
 
         section {
-            padding: 60px 20px;
-            max-width: 1100px;
+            padding: 50px 20px;
+            max-width: 1000px;
             margin: auto;
         }
 
         h2 {
-            font-size: 2rem;
             color: var(--primary);
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-
-        h2::after {
-            content: "";
-            height: 2px;
-            flex-grow: 1;
-            background: linear-gradient(90deg, var(--primary), transparent);
         }
 
         .card {
             background: var(--bg-card);
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: transform 0.3s ease, border-color 0.3s ease;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(56, 189, 248, 0.3);
-        }
-
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .skill-tag {
-            background: rgba(56, 189, 248, 0.1);
+        .skills span {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 12px;
+            background: #0ea5e91a;
+            border-radius: 20px;
             color: var(--primary);
-            padding: 8px 16px;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            border: 1px solid rgba(56, 189, 248, 0.2);
-        }
-
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
-        .date {
-            color: var(--primary);
-            font-weight: bold;
-            font-size: 0.9rem;
-        }
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .cert-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            list-style: none;
-            padding: 0;
-        }
-
-        .cert-item {
-            background: rgba(255, 255, 255, 0.03);
-            padding: 15px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
         }
 
         footer {
             text-align: center;
-            padding: 40px;
+            padding: 20px;
             background: #020617;
-            color: var(--text-dim);
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            .header-content h1 { font-size: 2.2rem; }
-            .experience-header { flex-direction: column; align-items: flex-start; }
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <div class="header-content">
-        <h1>MD DILSHAD A.</h1>
-        <p class="title">DevOps Engineer | AWS & Automation Specialist</p>
-        <p><i class="fas fa-map-marker-alt"></i> Mumbai Metropolitan Region, India</p>
-        <div class="social-links">
-            <a href="https://github.com/dilshadashraf007" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/dilshadashraf7" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:contact@yourdomain.com" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>
+    <h1>Md Dilshad Ashraf</h1>
+    <p class="title">DevOps Engineer | AWS & Automation</p>
+    <p class="badge">🚀 Entry Level | Immediate Joiner</p>
+    <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+
+    <div class="social-links">
+        <a href="https://github.com/dilshadashraf007" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dilshadashraf7" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:contact@yourdomain.com">
+            <i class="fas fa-envelope"></i>
+        </a>
     </div>
 </header>
 
-<section id="about">
-    <h2><i class="fas fa-user-astronaunt"></i> About Me</h2>
+<section>
+    <h2><i class="fas fa-user-astronaut"></i> About Me</h2>
     <div class="card">
-        <p>
-            Dedicated DevOps Engineer with hands-on experience in <strong>AWS, Docker, Kubernetes, and CI/CD</strong> pipeline automation. 
-            I focus on building scalable cloud infrastructure and automating deployment workflows to improve application reliability 
-            and delivery speed. 
-        </p>
+        Passionate DevOps Engineer with hands-on experience in AWS, Docker, Kubernetes, and CI/CD pipelines.
+        Focused on automation, scalability, and reliable cloud infrastructure.
     </div>
 </section>
 
-<section id="skills">
-    <h2><i class="fas fa-tools"></i> Technical Stack</h2>
-    <div class="skills-grid">
-        <span class="skill-tag">AWS (EC2, S3, IAM, EKS, RDS)</span>
-        <span class="skill-tag">Docker</span>
-        <span class="skill-tag">Kubernetes</span>
-        <span class="skill-tag">Jenkins</span>
-        <span class="skill-tag">GitHub Actions</span>
-        <span class="skill-tag">Linux</span>
-        <span class="skill-tag">Shell Scripting</span>
-        <span class="skill-tag">Git & GitHub</span>
-        <span class="skill-tag">Azure</span>
-        <span class="skill-tag">Cloud Automation</span>
+<section>
+    <h2><i class="fas fa-tools"></i> Skills</h2>
+    <div class="skills">
+        <span>AWS</span>
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>Jenkins</span>
+        <span>Linux</span>
+        <span>GitHub Actions</span>
     </div>
 </section>
 
-<section id="experience">
+<section>
     <h2><i class="fas fa-briefcase"></i> Experience</h2>
     <div class="card">
-        <div class="experience-header">
-            <h3>DevOps Intern — Interncoding</h3>
-            <span class="date">OCT 2025 - MAR 2026</span>
-        </div>
+        <strong>DevOps Intern — Interncoding</strong><br>
+        OCT 2025 - MAR 2026
         <ul>
-            <li>Built and managed CI/CD pipelines with Jenkins for seamless delivery.</li>
-            <li>Containerized applications using Docker and orchestrated deployments on Kubernetes (EKS).</li>
-            <li>Managed core AWS infrastructure including EC2, ECR, and IAM policies.</li>
-            <li>Maintained robust Linux environments to ensure high availability.</li>
+            <li>CI/CD pipelines using Jenkins</li>
+            <li>Docker & Kubernetes deployments</li>
+            <li>AWS infrastructure management</li>
         </ul>
     </div>
-
-    <div class="card">
-        <div class="experience-header">
-            <h3>Datacom (Intern) — Forage</h3>
-            <span class="date">DEC 2025 - FEB 2026</span>
-        </div>
-        <p>Implemented an end-to-end CI/CD pipeline for a Node.js application. Automated the entire lifecycle from code push to Kubernetes cluster deployment.</p>
-    </div>
 </section>
 
-<section id="projects">
-    <h2><i class="fas fa-code-branch"></i> Key Projects</h2>
-    <div class="project-grid">
-        <div class="card">
-            <h3>Route 53 DNS Failover</h3>
-            <p>Implemented multi-region high availability for production environments using Route 53 health checks and automatic failover.</p>
-        </div>
-        <div class="card">
-            <h3>Flask App with RDS</h3>
-            <p>Deployed a Flask application leveraging Amazon RDS for automated backups, security, and maintenance.</p>
-        </div>
-        <div class="card">
-            <h3>Serverless Lambda & DynamoDB</h3>
-            <p>Created a cloud-native CRUD application using Lambda functions and DynamoDB for efficient data management.</p>
-        </div>
-        <div class="card">
-            <h3>S3 Static Hosting</h3>
-            <p>Configured scalable, serverless web hosting via AWS S3 with optimized bucket policies.</p>
-        </div>
-    </div>
-</section>
-
-<section id="certifications">
-    <h2><i class="fas fa-certificate"></i> Certifications</h2>
-    <ul class="cert-list">
-        <li class="cert-item"><i class="fab fa-aws" style="color:#FF9900"></i> AWS Solutions Architect Fundamentals</li>
-        <li class="cert-item"><i class="fab fa-aws" style="color:#FF9900"></i> AWS Cloud Practitioner Essential</li>
-        <li class="cert-item"><i class="fab fa-docker" style="color:#2496ED"></i> Getting Started with Docker (Simplilearn)</li>
-        <li class="cert-item"><i class="fab fa-jenkins" style="color:#D24939"></i> Getting Started with Jenkins (Simplilearn)</li>
-        <li class="cert-item"><i class="fas fa-network-wired"></i> Cisco Certified Network Associate (CCNA)</li>
-    </ul>
+<section>
+    <h2><i class="fas fa-code"></i> Projects</h2>
+    <div class="card">Route 53 Failover Setup</div>
+    <div class="card">Flask App with AWS RDS</div>
+    <div class="card">Serverless Lambda App</div>
 </section>
 
 <footer>
-    <p>&copy; 2026 MD Dilshad Ashraf | Built with Passion for Cloud & DevOps</p>
+    © 2026 Md Dilshad Ashraf
 </footer>
 
 </body>
