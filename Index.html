@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Md Dilshad Ashraf | DevOps Portfolio</title>
 
-    <!-- FIXED: Font Awesome CDN -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
@@ -27,12 +27,13 @@
             font-family: 'Segoe UI', sans-serif;
             background: var(--bg-dark);
             color: var(--text-main);
+            line-height: 1.6;
         }
 
         header {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
             padding: 80px 20px;
             text-align: center;
-            background: linear-gradient(135deg, #1e293b, #0f172a);
         }
 
         h1 {
@@ -44,7 +45,6 @@
         .title {
             color: var(--text-dim);
             margin-top: 10px;
-            font-size: 1.2rem;
         }
 
         .badge {
@@ -60,19 +60,20 @@
         }
 
         section {
-            padding: 50px 20px;
-            max-width: 1000px;
+            padding: 60px 20px;
+            max-width: 1100px;
             margin: auto;
         }
 
         h2 {
             color: var(--primary);
+            margin-bottom: 20px;
         }
 
         .card {
             background: var(--bg-card);
             padding: 20px;
-            margin: 10px 0;
+            margin-bottom: 20px;
             border-radius: 10px;
         }
 
@@ -80,9 +81,15 @@
             display: inline-block;
             margin: 5px;
             padding: 8px 12px;
-            background: #0ea5e91a;
+            background: rgba(56,189,248,0.1);
             border-radius: 20px;
             color: var(--primary);
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
         }
 
         footer {
@@ -97,7 +104,7 @@
 
 <header>
     <h1>Md Dilshad Ashraf</h1>
-    <p class="title">DevOps Engineer | AWS & Automation</p>
+    <p class="title">DevOps Engineer | AWS & Automation Specialist</p>
     <p class="badge">🚀 Entry Level | Immediate Joiner</p>
     <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
 
@@ -117,45 +124,65 @@
 <section>
     <h2><i class="fas fa-user-astronaut"></i> About Me</h2>
     <div class="card">
-        Passionate DevOps Engineer with hands-on experience in AWS, Docker, Kubernetes, and CI/CD pipelines.
-        Focused on automation, scalability, and reliable cloud infrastructure.
+        Dedicated DevOps Engineer with hands-on experience in AWS, Docker, Kubernetes, and CI/CD pipeline automation.
+        Focused on scalable infrastructure and reliable deployments.
     </div>
 </section>
 
 <section>
-    <h2><i class="fas fa-tools"></i> Skills</h2>
+    <h2><i class="fas fa-tools"></i> Technical Skills</h2>
     <div class="skills">
-        <span>AWS</span>
+        <span>AWS (EC2, S3, IAM, EKS, RDS)</span>
         <span>Docker</span>
         <span>Kubernetes</span>
         <span>Jenkins</span>
-        <span>Linux</span>
         <span>GitHub Actions</span>
+        <span>Linux</span>
+        <span>Shell Scripting</span>
+        <span>Azure</span>
     </div>
 </section>
 
 <section>
     <h2><i class="fas fa-briefcase"></i> Experience</h2>
+
     <div class="card">
         <strong>DevOps Intern — Interncoding</strong><br>
         OCT 2025 - MAR 2026
         <ul>
-            <li>CI/CD pipelines using Jenkins</li>
+            <li>Built CI/CD pipelines using Jenkins</li>
             <li>Docker & Kubernetes deployments</li>
             <li>AWS infrastructure management</li>
         </ul>
     </div>
+
+    <div class="card">
+        <strong>Datacom (Intern) — Forage</strong><br>
+        DEC 2025 - FEB 2026
+        <p>Developed end-to-end CI/CD pipeline for Node.js app with Kubernetes deployment.</p>
+    </div>
 </section>
 
 <section>
-    <h2><i class="fas fa-code"></i> Projects</h2>
-    <div class="card">Route 53 Failover Setup</div>
-    <div class="card">Flask App with AWS RDS</div>
-    <div class="card">Serverless Lambda App</div>
+    <h2><i class="fas fa-code-branch"></i> Projects</h2>
+
+    <div class="project-grid">
+        <div class="card">Route 53 DNS Failover</div>
+        <div class="card">Flask App with AWS RDS</div>
+        <div class="card">Serverless Lambda & DynamoDB</div>
+        <div class="card">S3 Static Hosting</div>
+    </div>
+</section>
+
+<section>
+    <h2><i class="fas fa-certificate"></i> Certifications</h2>
+    <div class="card">AWS Cloud Practitioner</div>
+    <div class="card">Docker & Jenkins - Simplilearn</div>
+    <div class="card">CCNA</div>
 </section>
 
 <footer>
-    © 2026 Md Dilshad Ashraf
+    © 2026 Md Dilshad Ashraf | DevOps Portfolio
 </footer>
 
 </body>
