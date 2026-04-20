@@ -5,35 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Md Dilshad Ashraf | DevOps Portfolio</title>
 
-    <!-- Font Awesome -->
+    <!-- FIXED Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
         :root {
-            --primary: #38bdf8;
-            --bg-dark: #0f172a;
+            --bg-deep: #0f172a;
             --bg-card: #1e293b;
-            --text-main: #e2e8f0;
+            --primary: #38bdf8;
+            --text-light: #f8fafc;
             --text-dim: #94a3b8;
-        }
-
-        * {
-            box-sizing: border-box;
-            scroll-behavior: smooth;
+            --border: rgba(255, 255, 255, 0.1);
         }
 
         body {
-            margin: 0;
             font-family: 'Segoe UI', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-main);
-            line-height: 1.6;
+            background: var(--bg-deep);
+            color: var(--text-light);
+            margin: 0;
         }
 
         header {
-            background: linear-gradient(135deg, #1e293b, #0f172a);
-            padding: 80px 20px;
             text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
         }
 
         h1 {
@@ -42,27 +37,27 @@
             margin: 0;
         }
 
-        .title {
+        .headline {
             color: var(--text-dim);
-            margin-top: 10px;
+            margin: 10px 0;
         }
 
         .badge {
-            margin-top: 10px;
             color: #0ea5e9;
             font-weight: bold;
         }
 
-        .social-links a {
+        .contact a {
             margin: 10px;
-            font-size: 1.5rem;
             color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
         }
 
         section {
-            padding: 60px 20px;
-            max-width: 1100px;
-            margin: auto;
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
         }
 
         h2 {
@@ -86,9 +81,9 @@
             color: var(--primary);
         }
 
-        .project-grid {
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
             gap: 15px;
         }
 
@@ -104,35 +99,35 @@
 
 <header>
     <h1>Md Dilshad Ashraf</h1>
-    <p class="title">DevOps Engineer | AWS & Automation Specialist</p>
+    <p class="headline">DevOps Engineer | AWS | Docker | Kubernetes | CI/CD</p>
     <p class="badge">🚀 Entry Level | Immediate Joiner</p>
     <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
 
-    <div class="social-links">
+    <div class="contact">
         <a href="https://github.com/dilshadashraf007" target="_blank">
             <i class="fab fa-github"></i>
         </a>
         <a href="https://www.linkedin.com/in/dilshadashraf7" target="_blank">
             <i class="fab fa-linkedin"></i>
         </a>
-        <a href="mailto:contact@yourdomain.com">
+        <a href="mailto:your-email@example.com">
             <i class="fas fa-envelope"></i>
         </a>
     </div>
 </header>
 
 <section>
-    <h2><i class="fas fa-user-astronaut"></i> About Me</h2>
+    <h2><i class="fas fa-user"></i> Professional Profile</h2>
     <div class="card">
-        Dedicated DevOps Engineer with hands-on experience in AWS, Docker, Kubernetes, and CI/CD pipeline automation.
-        Focused on scalable infrastructure and reliable deployments.
+        DevOps Engineer with hands-on experience in AWS, Docker, Kubernetes, and CI/CD pipeline automation.
+        Focused on scalable cloud infrastructure and reliable deployments.
     </div>
 </section>
 
 <section>
     <h2><i class="fas fa-tools"></i> Technical Skills</h2>
     <div class="skills">
-        <span>AWS (EC2, S3, IAM, EKS, RDS)</span>
+        <span>AWS (EC2, S3, IAM, EKS, RDS, DynamoDB)</span>
         <span>Docker</span>
         <span>Kubernetes</span>
         <span>Jenkins</span>
@@ -148,7 +143,7 @@
 
     <div class="card">
         <strong>DevOps Intern — Interncoding</strong><br>
-        OCT 2025 - MAR 2026
+        Oct 2025 - Mar 2026
         <ul>
             <li>Built CI/CD pipelines using Jenkins</li>
             <li>Docker & Kubernetes deployments</li>
@@ -157,18 +152,17 @@
     </div>
 
     <div class="card">
-        <strong>Datacom (Intern) — Forage</strong><br>
-        DEC 2025 - FEB 2026
-        <p>Developed end-to-end CI/CD pipeline for Node.js app with Kubernetes deployment.</p>
+        <strong>Datacom Intern — Forage</strong><br>
+        Dec 2025 - Feb 2026
+        <p>Implemented Node.js CI/CD pipeline using Jenkins, Docker, and Kubernetes.</p>
     </div>
 </section>
 
 <section>
-    <h2><i class="fas fa-code-branch"></i> Projects</h2>
-
-    <div class="project-grid">
+    <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+    <div class="grid">
         <div class="card">Route 53 DNS Failover</div>
-        <div class="card">Flask App with AWS RDS</div>
+        <div class="card">Flask App with RDS</div>
         <div class="card">Serverless Lambda & DynamoDB</div>
         <div class="card">S3 Static Hosting</div>
     </div>
@@ -176,9 +170,12 @@
 
 <section>
     <h2><i class="fas fa-certificate"></i> Certifications</h2>
-    <div class="card">AWS Cloud Practitioner</div>
-    <div class="card">Docker & Jenkins - Simplilearn</div>
-    <div class="card">CCNA</div>
+    <div class="grid">
+        <div class="card">AWS Solutions Architect Fundamentals</div>
+        <div class="card">AWS Cloud Practitioner</div>
+        <div class="card">Docker & Jenkins (Simplilearn)</div>
+        <div class="card">CCNA</div>
+    </div>
 </section>
 
 <footer>
