@@ -60,27 +60,11 @@ I am passionate about:
 - Infrastructure as Code using Terraform  
 - GitHub Actions CI/CD Pipeline  
 
----
-
-## 🏗️ Architecture Overview
-
 
 
 ---
 
-## 📜 Certifications
-- AWS Certified Cloud Practitioner *(Optional / Pursuing)*  
-- Kubernetes Certification (CKA/CKAD – Optional)
 
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight" />
-</p>
-
----
 
 ## 📞 Connect With Me
 
